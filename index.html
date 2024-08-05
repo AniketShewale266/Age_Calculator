@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-part">
+        <div class="input">
+          <span id="day-error">DAY</span>
+          <input type="number" placeholder="DD" id="day" min="1"/>
+          <span class="error" id="error1"></span>
+        </div>
+        <div class="input">
+          <span id="month-error">MONTH</span>
+          <input type="number"  placeholder="MM" id="month" min="1"/>
+          <span class="error" id="error2"></span>
+        </div>
+        <div class="input">
+          <span id="year-error">YEAR</span>
+          <input type="number"  placeholder="YYYY" id="year" min="1"/>
+          <span class="error" id="error3"></span>
+        </div>
+        
+      </div>
+      <div class="separation">
+        <div class="hr-line">
+
+        </div>
+        <div class="btn" id="submit">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+
+      </div>
+      <div class="bottom-part">
+        <span class="content"><span class="value" id="resultYears">__</span>years</span>
+        <span class="content"><span class="value" id="resultMonths">__</span>months</span>
+        <span class="content"><span class="value" id="resultDays">__</span>days</span>
+      </div>
+    </div>
+  </body>
+</html>
